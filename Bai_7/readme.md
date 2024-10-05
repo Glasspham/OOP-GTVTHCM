@@ -1,11 +1,11 @@
 # Bài tập nâng cao
 
-Cho n đồ vật khác nhau, đồ vật thứ i có trọng lượng w; và giá trị vị. Bạn mang theo một chiếc túi có tải trọng tối đa là W, nhiệm vụ của bạn là chọn ra các đồ vật để cho vào túi sao cho tổng giá trị của các đồ vật lấy được là lớn nhất có thể?
+Cho n đồ vật khác nhau, đồ vật thứ i có trọng lượng w<sub>i</sub> và giá trị vị. Bạn mang theo một chiếc túi có tải trọng tối đa là W, nhiệm vụ của bạn là chọn ra các đồ vật để cho vào túi sao cho tổng giá trị của các đồ vật lấy được là lớn nhất có thể?
 
 _Input:_
 
 -   Dòng đầu tiên chứa hai số nguyên dương n và W.
--   n dòng tiếp theo, mỗi dòng chứa hai số nguyên dương wi và vi phân tách nhau bởi dấu cách.
+-   n dòng tiếp theo, mỗi dòng chứa hai số nguyên dương w<sub>i</sub> và vi phân tách nhau bởi dấu cách.
 
 _Output:_
 
@@ -18,11 +18,11 @@ _Output:_
 
 ```
 //Nhap cac mon do
-void enter(int &n, int &W, vector < pair < int, int > > items);
+void enter(int &n, int &W, vector<pair<int,int>>items);
 //dat co cac mon do da thu qua
-void trace_back(int n, int W, vector < vector < int > > &dp, vector < pair < int, int > > &items);
+void trace_back(int n, int W, vector<vector<int>> &dp, vector<pair<int,int>> &items);
 //Giai phap tim cac mon do toi uu
-void solution(int n, int W, vector < pair < int, int > > &items);
+void solution(int n, int W, vector<pair<int,int>> &items);
 ```
 
 -   _File Source.cpp_
