@@ -7,7 +7,7 @@ void enter(int &n, int &W, vector<pair<int,int>> &items) {
         cin >> items[i].first >> items[i].second;
 }
 
-void trace_back(int n, int W, vector<vector<int>> &dp, vector<pair<int, int>> &items) {
+void trace_back(int n, int W, vector<vector<int>> &dp, vector<pair<int,int>> &items) {
     vector<int> result;
     int i = n, j = W;
     while(i) {
@@ -21,7 +21,7 @@ void trace_back(int n, int W, vector<vector<int>> &dp, vector<pair<int, int>> &i
         cout << result[i] << ' ';
 }
 
-void solution(int n, int W, vector<pair<int, int>> &items) {
+void solution(int n, int W, vector<pair<int,int>> &items) {
     vector<vector<int>> dp(n + 1, vector<int>(W + 1, 0));
     for(int i = 1; i <= n; ++i) {
         for(int j = 1; j <= W; ++j) {
