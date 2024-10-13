@@ -14,23 +14,27 @@
 
 – Tạo đề thi trắc nghiệm gồm nhiều câu, nhập từ bàn phím và lưu vào file (\*.TTN)
 
-–Đọc nội dung file \*.TTN để cho thi
+– Đọc nội dung file \*.TTN để cho thi
 
-–Đọc một file TTN và xóa khoảng trống thừa ở các câu hỏi và trả lời, lưu đè lên file cũ
+– Đọc một file TTN và xóa khoảng trống thừa ở các câu hỏi và trả lời, lưu đè lên file cũ
 
 -   **Yêu cầu:**
 
-    – Tạo lớp CauhoiTN với các thuộc tính như yêu cầu, các phương thức bao gồm:
+– Tạo lớp CauhoiTN với các thuộc tính như yêu cầu, các phương thức bao gồm:
 
-        – nhap(): nhập liệu từ bàn phím.
-        – docfile(ifstream& f): đọc dữ liệu một câu hỏi từ file stream f.
-        – ghifile(ofstream& f): ghi nội dung câu hỏi vào file stream f.
-        – kiemtra(): hiện câu hỏi, và cho người dùng nhập câu trả lời, kiểm tra câu trả lời có đúng đáp án không.
-        – xuat(): xuất câu hỏi ra màn hình (bao gồm đáp án đúng).
+- nhap(): nhập liệu từ bàn phím.
+        
+- docfile(ifstream& f): đọc dữ liệu một câu hỏi từ file stream f.
+        
+- ghifile(ofstream& f): ghi nội dung câu hỏi vào file stream f.
 
-    – Xây dựng thực đơn (Menu) để người dùng có thể lựa chọn chức năng (bao gồm chức năng thoát chương trình).
+- kiemtra(): hiện câu hỏi, và cho người dùng nhập câu trả lời, kiểm tra câu trả lời có đúng đáp án không.
+        
+- xuat(): xuất câu hỏi ra màn hình (bao gồm đáp án đúng).
 
-    – Viết hàm bool giongnhau(CauhoiTN cau1, CauhoiTN cau2) với lớp CauHoiTN để kiểm tra hai câu hỏi có trùng nhau hay không (dùng từ khoá friend).
+– Xây dựng thực đơn (Menu) để người dùng có thể lựa chọn chức năng (bao gồm chức năng thoát chương trình).
+
+– Viết hàm bool giongnhau(CauhoiTN cau1, CauhoiTN cau2) với lớp CauHoiTN để kiểm tra hai câu hỏi có trùng nhau hay không (dùng từ khoá friend).
 
 **Lưu ý về cách nộp bài:**
 
