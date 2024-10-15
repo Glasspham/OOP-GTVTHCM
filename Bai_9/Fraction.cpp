@@ -48,6 +48,7 @@ void Fraction::input() {
 }
 
 int GCD(int a, int b) {
+    a = abs(a), b = abs(b);
     while(b) {
         int tmp = a % b;
         a = b;
