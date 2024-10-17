@@ -1,0 +1,51 @@
+10
+101
+Nguyen Van A
+2
+9.0
+8.5
+102
+Tran Thi A
+0
+8.0
+7.0
+103
+Le Van C
+1
+9.0
+9.0
+104
+Nguyen Thi D
+3
+7.5
+8.0
+105
+Phan Hoang E
+6
+8.0
+8.5
+106
+Nguyen Van A
+2
+9.5
+9.0
+107
+Le Thi G
+0
+10.0
+8.0
+108
+Pham Van H
+4
+6.0
+7.0
+109
+Tran Van I
+1
+9.0
+8.5
+110
+Nguyen Van K
+5
+7.0
+6.5
