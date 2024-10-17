@@ -11,10 +11,9 @@ int main() {
     int n;
     fi >> n; //doc so luong diem
     vector<Point> lstPoint;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         Point* ptr=new Point(0,0);
-        fi >> *ptr;
+        fi >> *ptr; 
         lstPoint.push_back(*ptr);
     }
     fi.close();
