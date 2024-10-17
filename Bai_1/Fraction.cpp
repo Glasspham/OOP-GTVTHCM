@@ -6,8 +6,8 @@ Fraction::Fraction() : numerator(0), denominator(1) {}
 Fraction::Fraction(int num, int denom) : numerator(num), denominator(denom) {}
 
 Fraction::Fraction(int n) {
-    numerator = rand() % (n + 1);
-    denominator = rand() % (n + 1);
+    numerator = rand() % n + 1;
+    denominator = rand() % n + 1;
 }
 
 // !b
