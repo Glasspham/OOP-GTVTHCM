@@ -22,9 +22,9 @@ Fraction::Fraction(int num, int dem) {
     }
 }
 
-Fraction::Fraction(int n) {
-    int num = rand() % (n + 1);
-    int dem = rand() % (n + 1);
+Fraction::Fraction(int random) {
+    int num = rand() % random + 1;
+    int dem = rand() % random + 1;
     this->numerator = num;
     this->denominator = dem;
     this->simplify();

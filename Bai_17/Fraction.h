@@ -10,7 +10,7 @@ private:
 public:
     Fraction();
     Fraction(int num, int den);
-    Fraction(int n);
+    Fraction(int random);
     void simplify();
     friend ostream& operator << (ostream& os, Fraction f);
 };
