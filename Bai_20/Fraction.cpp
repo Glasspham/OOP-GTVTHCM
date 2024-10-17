@@ -38,7 +38,7 @@ ostream& operator << (ostream& os, const Fraction f) {
 }
 
 bool Fraction::operator == (const Fraction& other) const {
-    return (numerator * other.denominator == other.numerator * denominator);
+    return (1ll * numerator * other.denominator == 1ll * other.numerator * denominator);
 }
 
 bool Fraction::operator != (const Fraction& other) const {
@@ -46,17 +46,17 @@ bool Fraction::operator != (const Fraction& other) const {
 }
 
 bool Fraction::operator > (const Fraction& other) const {
-    return (numerator * other.denominator > other.numerator * denominator);
-}
-
-bool Fraction::operator >= (const Fraction& other) const {
-    return (numerator * other.denominator >= other.numerator * denominator);
+    return (1ll * numerator * other.denominator > 1ll * other.numerator * denominator);
 }
 
 bool Fraction::operator < (const Fraction& other) const {
-    return (numerator * other.denominator < other.numerator * denominator);
+    return (1ll * numerator * other.denominator < 1ll * other.numerator * denominator);
+}
+
+bool Fraction::operator >= (const Fraction& other) const {
+    return !(*this < other);
 }
 
 bool Fraction::operator <= (const Fraction& other) const {
-    return (numerator * other.denominator <= other.numerator * denominator);
+    return !(*this > other);
 }
