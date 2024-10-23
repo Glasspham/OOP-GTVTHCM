@@ -50,8 +50,8 @@ public:
                                                 // n2 biểu thức chỉ gồm phép trừ, và
                                                 // n3 biểu thức chỉ gồm phép nhân.
     vector<Bieuthuc> danhsach() { return ds; }
-    void xuat(ostream& output=cout); // xuất danh sách các câu hỏi ra màn hình, các câu hỏi có dạng a # b = ?
-    int danhgia(istream& input=cin); // đọc n1 + n2 + n3 câu trả lời từ istream (có thể từ cin hoặc file), trả về số câu đúng.
+    void xuat(ostream& output = cout); // xuất danh sách các câu hỏi ra màn hình, các câu hỏi có dạng a # b = ?
+    int danhgia(istream& input = cin); // đọc n1 + n2 + n3 câu trả lời từ istream (có thể từ cin hoặc file), trả về số câu đúng.
 };
 ```
 
@@ -72,12 +72,12 @@ _File BieuthucPT.h_
 using namespace std;
 class BieuthucPT : public Bieuthuc {
 private:
-     //..Bổ sung thêm dữ liệu để lưu trữ được (a#b) # (c#d)
+     //..Bổ sung thêm dữ liệu để lưu trữ được (a # b) # (c # d)
 public:
-    BieuthucPT(int level);                                    // overide để sinh ngẫu nhiên được dạng biểu thức mới, quy luật sinh như sinh lớp Bieuthuc
-    friend ostream& operator << (ostream& out, BieuthucPT bt);// overide để xuất dạng biểu thức mới
-    bool kiemtra(float traloi);                               // overide...
-    float giatri();                                           // overide...
+    BieuthucPT(int level); // overide để sinh ngẫu nhiên được dạng biểu thức mới, quy luật sinh như sinh lớp Bieuthuc
+    friend ostream& operator << (ostream& out, BieuthucPT bt); // overide để xuất dạng biểu thức mới
+    bool kiemtra(float traloi); // overide...
+    float giatri(); // overide...
 };
 ```
 
@@ -101,7 +101,7 @@ protected:
     Fraction a, b;
 public:
     BieuthucPS(int level);
-    friend ostream& operator<<(ostream& out, BieuthucPS bt);
+    friend ostream& operator << (ostream& out, BieuthucPS bt);
     bool kiemtra(float traloi);
     float giatri();
 };
@@ -127,8 +127,3 @@ _File Fraction.cpp_
 ```bash
 #include "Fraction.h"
 ```
-
-Yêu cầu:
-
--   Nộp file Project
--   Hình chụp màn hình thực thi
